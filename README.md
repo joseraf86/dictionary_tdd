@@ -1,7 +1,7 @@
-# Apuntes de Computaci√≥n
-#### Desarrollando caracter√≠sticas bajo el enfoque TDD en _Ruby on Rails_
+# Apuntes de ComputaciÛn
+#### Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_
 
-C√≥digo de ejemplo del tutorial [Desarrollando caracter√≠sticas bajo el enfoque TDD en _Ruby on Rails_][1].
+CÛdigo de ejemplo del tutorial [Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_][1].
 
 #### Pre-requisitos
 
@@ -10,17 +10,15 @@ C√≥digo de ejemplo del tutorial [Desarrollando caracter√≠sticas bajo el enfoque 
 * gem 2.5.0
 * bundle 1.10.6
 
-Es recomendable el uso de [rbenv][2] con el plugin [rb-build][3] para la instalaci√≥n.
+Es recomendable el uso de [_rbenv_][2] con el plugin [_rb-build_][3] para la instalaciÛn.
 
 Se asume el uso de MySQL con _back-end_. Se puede utilizar cualquier otro _back-end_ soportado por **_ActiveRecord_** con los cambios necesarios en _config/database.yml_.
 
-El correcto funcionamiento del ejemplo no est√° garantizado si se usan distintas versiones de las indicadas.
+El correcto funcionamiento del ejemplo no est· garantizado si se usan distintas versiones de las indicadas.
 
-#### Instalaci√≥n
+#### InstalaciÛn
 
-Editar _config/database.yml_ y _config/secrets.yml_ con los datos del usuario de base de datos.
-
-Ejecutar en el directorio ra√≠z del proyecto:
+Ejecutar en el directorio raÌz del proyecto:
 ```sh
 $ git clone https://github.com/joseraf86/dictionary_tdd.git
 $ bundle install
@@ -28,38 +26,45 @@ $ bundle exec rake db:setup
 $ bundle exec rake test -v
 ```
 
-Comprobar la aplicaci√≥n en:
+Editar _config/database.yml_ y _config/secrets.yml_ con los datos del usuario de base de datos.
+
+Ejecutar el servidor de pruebas:
+```sh
+$ bundle exec rails s
+```
+
+Comprobar la aplicaciÛn en:
 
 [http://127.0.0.1:3000/words/learn][3]
 
-Deber√≠a generarse una palabra en ingl√©s aleatoriamente y su respectiva traducci√≥n al espa√±ol.
+DeberÌa generarse una palabra en inglÈs aleatoriamente y su respectiva traducciÛn al espaÒol.
 
 #### Seguir los 15 pasos
 
-Ver detalles en [Desarrollando caracter√≠sticas bajo el enfoque TDD en Ruby on Rails][1].
+Ver detalles en [Desarrollando caracterÌsticas bajo el enfoque TDD en _Ruby on Rails_][1].
 
-1. Crear una nueva aplicaci√≥n _Rails_
+1. Crear una nueva aplicaciÛn _Rails_
 2. Configurar la base de datos
 3. Crear el modelo _Word_ con el correspondiente _test_ unitario
 4. Programar el _test_ unitario de la clase _Word_
-5. Ejecutar la migraci√≥n _db/migrate/xxxxxxxxxxxxxx_create_words.rb_
-6. Crear los fixtures y el _test_ para el m√©todo _Word.random_
-7. Implementar el m√©todo _Word.random_
-8. Generar el controlador Words con la acci√≥n _learn_
-9. Escribir un _test_ para la acci√≥n _learn_
+5. Ejecutar la migraciÛn _db/migrate/xxxxxxxxxxxxxx_create_words.rb_
+6. Crear los fixtures y el _test_ para el mÈtodo _Word.random_
+7. Implementar el mÈtodo _Word.random_
+8. Generar el controlador Words con la acciÛn _learn_
+9. Escribir un _test_ para la acciÛn _learn_
 10. Hacer que el _test_ pase
 11. Reescribir el _test_ en  _test/controllers/words_controller_test.rb_
-12. Codificar  la implementaci√≥n
+12. Codificar  la implementaciÛn
 13. Verificar que la palabra es mostrada
-14. Implementar la vista de la acci√≥n _learn_
-15. Verificaci√≥n manual
+14. Implementar la vista de la acciÛn _learn_
+15. VerificaciÛn manual
 
 #### Lecturas recomendadas
 
-* [15 TDD steps to create a Rails application][4] **(Fuente original/_Original source_: Andrzej Krzywda)**
-* [A Guide to Testing Rails Applications][5] **(Gu√≠a oficial de _Rails_/_Official Rails guide_)**
-* [Red-Green-Refactor][6] **(_Blog_ personal de James Shore/_James Shore's personal blog_)**
-* [Introduction to Test Driven Development (TDD)][7] **(Agile Data por Scott Ambler/_Agile Data by Scott Ambler_)**
+* [15 _TDD steps to create a Rails application_][4] **(Fuente original/_Original source_: _Thoughts on Software_ - Andrzej Krzywda)**
+* [_A Guide to Testing Rails Applications_][5] **(GuÌa oficial de _Rails_/_Official Rails guide_)**
+* [_Red-Green-Refactor_][6] **(_Blog_ personal de James Shore/_James Shore's personal blog_)**
+* [_Introduction to Test Driven Development_ (TDD)][7] **(_Agile Data_ por Scott Ambler/_Agile Data by Scott Ambler_)**
 
 #### Contacto
 joserafaelguevara@gmail.com
